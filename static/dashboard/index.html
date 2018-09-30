@@ -5,8 +5,9 @@
     crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cerulean/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-qVp3sGZJcZdk20BIG6O0Sb0sYRyedif3+Z8bZtQueBW/g7Dp67a0XdiMmmWCCm82" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/materia/bootstrap.min.css" rel="stylesheet" integrity="sha384-5bFGNjwF8onKXzNbIcKR8ABhxicw+SC1sjTh6vhSbIbtVgUuVTm2qBZ4AaHc7Xr9"
+    crossorigin="anonymous">
+
 
   <link href="./style.css" rel="stylesheet">
 </head>
@@ -14,6 +15,24 @@
 <body>
   <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
   <!-- https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary pt-0 pb-0">
+    <a class="navbar-brand" href="#">Dashboard Demo</a>
+    <div class="btn-group">
+
+      <button type="button" class="btn btn-sm p-2 btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu  dropdown-menu-right">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+  </nav>
 
   <div class="dashboard">
     <div class="sidenav bg-primary">
@@ -26,15 +45,17 @@
             <span>Title</span>
           </li>
           <li class="sidenav-item">
+            <i class="fa fa-table"></i>
             <a href="#">Link 1</a>
           </li>
           <li class="sidenav-item">
             <a href="#">
-              <i class="fa fa-file-o"></i>
+              <i class="fa fa-wrench"></i>
               Link 2
             </a>
           </li>
           <li class="sidenav-item">
+            <i class="fa fa-tags"></i>
             <a href="#">Link 3</a>
           </li>
         </ul>
@@ -49,15 +70,17 @@
             <span>Title</span>
           </li>
           <li class="sidenav-item">
+            <i class="fa fa-bell-o"></i>
             <a href="#">Link 1</a>
           </li>
           <li class="sidenav-item">
             <a href="#">
-              <i class="fa fa-file-o"></i>
+              <i class="fa fa-address-book-o"></i>
               Link 2
             </a>
           </li>
           <li class="sidenav-item">
+            <i class="fa fa-bar-chart"></i>
             <a href="#">Link 3</a>
           </li>
         </ul>
@@ -80,16 +103,20 @@
     </div>
 
     <div class="main">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
       </nav>
-      <div class="container-fluid">
-        <h1>Dashboard Demo</h1>
-      </div>
     </div>
 
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="/b/a.js"></script>
 </body>
 
