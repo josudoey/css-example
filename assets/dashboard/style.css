@@ -22,7 +22,7 @@ body {
 }
 
 .sidenav {
-  z-index: 0;
+  z-index: 1;
 }
 
 .sidenav-list a {
@@ -105,7 +105,7 @@ body {
     border-left-style: solid;
     border-left-color: var(--gray);
   }
-  .main-slot .navbar .aside .main-aside .main {
+  .slot-main .navbar .aside .main-aside .main {
     position: relative;
     width: 100%;
     top: 0px;
@@ -170,9 +170,10 @@ body {
     padding-bottom: 40px;
   }
 
-  .main-slot {
+  .slot-main {
     position: relative;
     width: 100% ;
+    z-index: 0;
   }
 
   .main {
