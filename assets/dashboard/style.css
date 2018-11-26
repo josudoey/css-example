@@ -141,6 +141,7 @@ body {
   }
   .sidenav-icon {
     padding: 10px;
+    line-height: 1;
   }
   .sidenav-list {
     list-style: none;
@@ -169,29 +170,26 @@ body {
     position: absolute;
     padding-bottom: 40px;
   }
-
   .slot-main {
     position: relative;
-    width: 100% ;
+    width: 100%;
     z-index: 0;
   }
-
   .main {
     position: relative;
-    width: 100% ;
+    width: 100%;
   }
-
   .main-aside {
     position: relative;
-    width: 100% ;
+    width: 100%;
     padding-right: 250px;
   }
-
   .aside {
     width: 250px;
     position: fixed;
     top: 48px;
     right: 0px;
+    padding-bottom: 48px;
     height: 100%;
     overflow-y: auto;
   }
