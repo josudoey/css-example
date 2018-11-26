@@ -105,7 +105,7 @@ body {
     border-left-style: solid;
     border-left-color: var(--gray);
   }
-  .main .navbar .aside .aside-main {
+  .main-slot .navbar .aside .main-aside .main {
     position: relative;
     width: 100%;
     top: 0px;
@@ -169,11 +169,18 @@ body {
     position: absolute;
     padding-bottom: 40px;
   }
+
+  .main-slot {
+    position: relative;
+    width: 100% ;
+  }
+
   .main {
     position: relative;
     width: 100% ;
   }
-  .aside-main {
+
+  .main-aside {
     position: relative;
     width: 100% ;
     padding-right: 250px;
