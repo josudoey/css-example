@@ -10,16 +10,13 @@ body {
 }
 
 .dashboard {
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  display: block;
   position: relative;
   top: 0;
-  margin-top: 48px;
-  margin-left: 60px;
+  padding-top: 48px;
+  padding-left: 60px;
   width: 100%;
-  height: calc(100% - 48px);
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -27,8 +24,6 @@ body {
 .sidenav {
   z-index: 0;
 }
-
-
 
 .sidenav-list a {
   color: var(--gray);
@@ -57,77 +52,11 @@ body {
   display: block;
 }
 
-@media (min-width: 576px) {
-  .sidenav {
-    position: fixed;
-    height: 100%;
-    min-height: 250px;
-    width: 60px;
-    top: 0;
-    left: 0;
-    padding-top: 60px;
-  }
-
-  .sidenav-menu {
-    padding-left: 0px;
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: auto;
-    padding: 8px;
-    z-index: 1;
-  }
-  .sidenav-menu:hover {
-    border-left-width: 3px;
-    border-left-style: solid;
-    border-left-color: var(--dark);
-    padding-left: 5px;
-    background-color: var(--secondary);
-    display: block;
-  }
-  .sidenav-icon {
-    padding: 10px;
-  }
-  .sidenav-list {
-    list-style: none;
-    background-color: var(--secondary);
-    padding: 0;
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 57px;
-    min-width: 160px;
-  }
-  .sidenav-list .sidenav-item {
-    padding: 10px 10px 10px 20px;
-    display: block;
-    text-align: left;
-    background-color: var(--secondary);
-  }
-  .sidenav-list .sidenav-item:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-    border-left-width: 3px;
-    border-left-style: solid;
-    border-left-color: var(--gray);
-  }
-  .sidenav-bottom {
-    bottom: 0px;
-    position: absolute;
-    padding-bottom: 40px;
-  }
-
-  .main {
-    width: calc(100% - 60px);
-  }
-
-}
-
-
 @media (max-width: 575px) {
   .dashboard {
     display: block;
     position: absolute;
-    margin-left: 0px;
+    padding-left: 0px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -176,9 +105,86 @@ body {
     border-left-style: solid;
     border-left-color: var(--gray);
   }
-  .main .navbar {
+  .main .navbar .aside .aside-main {
     position: relative;
     width: 100%;
     top: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .sidenav {
+    position: fixed;
+    height: 100%;
+    min-height: 250px;
+    width: 60px;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+  }
+  .sidenav-menu {
+    padding-left: 0px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: auto;
+    padding: 8px;
+    z-index: 1;
+  }
+  .sidenav-menu:hover {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: var(--dark);
+    padding-left: 5px;
+    background-color: var(--secondary);
+    display: block;
+  }
+  .sidenav-icon {
+    padding: 10px;
+  }
+  .sidenav-list {
+    list-style: none;
+    background-color: var(--secondary);
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 57px;
+    min-width: 160px;
+  }
+  .sidenav-list .sidenav-item {
+    padding: 10px 10px 10px 20px;
+    display: block;
+    text-align: left;
+    background-color: var(--secondary);
+  }
+  .sidenav-list .sidenav-item:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: var(--gray);
+  }
+  .sidenav-bottom {
+    bottom: 0px;
+    position: absolute;
+    padding-bottom: 40px;
+  }
+  .main {
+    position: relative;
+    width: 100% ;
+  }
+  .aside-main {
+    position: relative;
+    width: 100% ;
+    padding-right: 250px;
+  }
+
+  .aside {
+    width: 250px;
+    position: fixed;
+    top: 48px;
+    right: 0px;
+    height: 100%;
+    overflow-y: auto;
   }
 }
